@@ -16,8 +16,16 @@
 			</b-col>
 
 			<b-col md="4">
-				<div>
-					<h3>Portfolio</h3>
+				<div class="d-flex justify-content-center">
+					<div class="px-2">
+						<b-icon font-scale="2" icon="facebook"></b-icon>
+					</div>
+					<div class="px-2">
+						<b-icon font-scale="2" icon="twitter"></b-icon>
+					</div>
+					<div class="px-2">
+						<b-icon font-scale="2" icon="linkedin"></b-icon>
+					</div>
 				</div>
 			</b-col>
 		</b-row>

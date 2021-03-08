@@ -2,7 +2,7 @@
   <div class="container mb-5">
 		<b-row class="justify-content-center mb-5">
 			<b-col md="3">
-				<b-card>
+				<b-card class="shadow">
 					<div class="p-3">
 						<b-img class="mb-5" width="50" height="50" :src="require('../assets/stopwatch.png')" />
 						<h5>On Time</h5>
@@ -13,7 +13,7 @@
 			</b-col>
 
 			<b-col md="3">
-				<b-card>
+				<b-card class="shadow">
 					<div class="p-3">
 						<b-img class="mb-5" width="50" height="50" :src="require('../assets/safe-box.png')" />
 						<h5>Clean Work</h5>
@@ -23,7 +23,7 @@
 				</b-card>
 			</b-col>
 			<b-col md="3">
-				<b-card>
+				<b-card class="shadow">
 					<div class="p-3">
 						<b-img class="mb-5" width="50" height="50" :src="require('../assets/icon.png')" />
 						<h5>Client Setisfaction</h5>

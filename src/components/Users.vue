@@ -3,15 +3,20 @@
 		<div class="mb-5">
 			<h3>Valuable Testimonial</h3>
 			<p class="text-secondary">See People Say About Me</p>
+		</div>
 
-			<div>
-				<b-card v-for="user in users" :key="user.email">
+		<b-row class="justify-content-center mb-5">
+			<b-col md="5">
+				<b-card class="shadow-lg">
+					<div class="mb-5">
+						<b-img :src="user.picture.medium"></b-img>
+					</div>
 					<div>
-						{{user}}
+						<h5>{{user.name.first}} {{user.name.last}},{{user.location.city}}</h5>
 					</div>
 				</b-card>
-			</div>
-		</div>
+			</b-col>
+		</b-row>
 		
 		<div class="mb-5">
 			<div>
@@ -40,27 +45,17 @@ export default {
 	name: 'User',
 	data() {
 		return {
-			users: null,
-			sliding: null,
-			slide: 0
+			user: null,
 		}
 	},
 	mounted () {
 		return axios.get('https://randomuser.me/api/')
 		.then((res) => {
-			this.users = res.data.results
+			this.user = res.data.results[0]
 		})
 		.catch(err => {
 			console.log(err)
 		})
-	},
-	methods: {
-		onSlideStart(slide) {
-			this.sliding = true
-		},
-		onSlideEnd(slide) {
-			this.sliding = false
-		}
 	}
 }
 </script>

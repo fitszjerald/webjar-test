@@ -3,7 +3,7 @@
 		<div class="container-fluid mb-5">
 			<b-row>
 				<b-col md="4">
-					<h3 class="text-dark my-4">Portfolio</h3>
+					<h3 class="text-white my-4">Portfolio</h3>
 				</b-col>
 
 				<b-col md="8">
